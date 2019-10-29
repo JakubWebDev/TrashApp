@@ -1,0 +1,814 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.link {
+  text-decoration: none;
+  color: white; }
+
+.float {
+  float: left; }
+
+.green {
+  color: #44db2d; }
+
+.green-text-shadow {
+  animation: greenglow 2s infinite ease-in-out; }
+
+body {
+  background-color: #fff;
+  color: white;
+  height: 100vh; }
+
+body::-webkit-scrollbar {
+  display: none; }
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #273c75;
+  box-shadow: black 0px 0px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  @media only screen and (min-width: 2560px) {
+    header {
+      height: 120px;
+      box-shadow: black 0px 0px 10px; } }
+
+#logo {
+  height: 100%;
+  width: 300px;
+  padding-left: 10px;
+  float: left;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Bowlby One SC', cursive;
+  overflow: hidden; }
+  @media only screen and (min-width: 1024px) {
+    #logo {
+      width: 750px;
+      padding-left: 20px;
+      font-size: 30px; } }
+  @media only screen and (min-width: 2560px) {
+    #logo {
+      width: 900px;
+      padding-left: 40px;
+      font-size: 50px; } }
+
+.floatlogo {
+  float: left;
+  transform: translate(5px, -50px); }
+  @media only screen and (min-width: 1024px) {
+    .floatlogo {
+      transform: translate(5px, -90px); } }
+  @media only screen and (min-width: 2560px) {
+    .floatlogo {
+      transform: translate(15px, -160px); } }
+
+#nav {
+  height: 100%;
+  float: right;
+  margin-right: 10px;
+  justify-content: space-around;
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    #nav {
+      display: flex; } }
+  @media only screen and (min-width: 2560px) {
+    #nav {
+      margin-right: 40px; } }
+
+.navbutton {
+  width: 80px;
+  height: 80px;
+  float: left;
+  padding-top: 13px;
+  margin-right: 3px;
+  text-align: center;
+  font-size: 50px;
+  background-color: #273c75;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1; }
+  .navbutton:hover {
+    background-color: #fff;
+    background-color: #203366;
+    font-size: 45px; }
+    @media only screen and (min-width: 2560px) {
+      .navbutton:hover {
+        font-size: 75px; } }
+  @media only screen and (min-width: 2560px) {
+    .navbutton {
+      width: 120px;
+      height: 120px;
+      font-size: 80px; } }
+
+.nameBar {
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background-color: #203366d3;
+  font-family: 'Concert One', cursive;
+  font-size: 18px;
+  transition: 0.3s;
+  transform: translateY(-100px);
+  position: relative;
+  z-index: -1; }
+  @media only screen and (min-width: 2560px) {
+    .nameBar {
+      width: 120px;
+      padding: 8px;
+      font-size: 24px; } }
+
+#about:hover ~ .nameBarAbout {
+  transform: translateY(0px); }
+
+#login:hover ~ .nameBarLogin {
+  transform: translateY(0px); }
+
+#user:hover ~ .nameBarLogin {
+  transform: translateY(0px); }
+
+#map:hover ~ .nameBarLogin {
+  transform: translateY(0px); }
+
+#logout:hover ~ .nameBarLogin {
+  transform: translateY(0px); }
+
+#nav-map:hover ~ .nameBarLogin {
+  transform: translateY(0px); }
+
+.move {
+  transition: 0.4s;
+  display: block;
+  animation: logomove-tablet-wide 5s infinite ease-in-out; }
+  @media only screen and (min-width: 1024px) {
+    .move {
+      animation: logomove 5s infinite ease-in-out; } }
+  @media only screen and (min-width: 2560px) {
+    .move {
+      animation: logomove-4K 5s infinite ease-in-out; } }
+
+main #welcome {
+  height: 100vh;
+  padding: 100px 30px;
+  color: #487eb0; }
+  @media only screen and (min-width: 1248px) {
+    main #welcome {
+      height: 200vh; } }
+  @media only screen and (min-width: 1440px) {
+    main #welcome {
+      height: 200vh; } }
+  @media only screen and (min-width: 1024px) {
+    main #welcome {
+      padding: 100px; } }
+  @media only screen and (min-width: 2560px) {
+    main #welcome {
+      height: 100vh; } }
+  main #welcome #hello {
+    margin: 50px 0px;
+    width: 290px;
+    height: 300px;
+    font-size: 20px;
+    background-color: #fff;
+    font-family: 'Kalam', cursive;
+    position: static;
+    z-index: 100;
+    float: left; }
+    @media only screen and (min-width: 768px) {
+      main #welcome #hello {
+        font-size: 35px;
+        width: 520px; } }
+    @media only screen and (min-width: 1024px) {
+      main #welcome #hello {
+        margin: 40px 0px;
+        font-size: 40px; } }
+    @media only screen and (min-width: 2560px) {
+      main #welcome #hello {
+        margin: 140px 0px;
+        font-size: 60px;
+        width: 800px; } }
+  main #welcome .text-puls {
+    animation: text-puls-tablet-wide 2s infinite ease-in-out; }
+    @media only screen and (min-width: 768px) {
+      main #welcome .text-puls {
+        animation: text-puls 2s infinite ease-in-out; } }
+    @media only screen and (min-width: 2560px) {
+      main #welcome .text-puls {
+        animation: text-puls-4K 2s infinite ease-in-out; } }
+  main #welcome #right {
+    float: right;
+    display: none; }
+    @media only screen and (min-width: 1024px) {
+      main #welcome #right {
+        display: flex; } }
+    main #welcome #right .treeOne {
+      font-size: 300px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1; }
+      @media only screen and (min-width: 2560px) {
+        main #welcome #right .treeOne {
+          font-size: 400px; } }
+    main #welcome #right .treeTwo {
+      font-size: 200px;
+      position: absolute;
+      bottom: 0;
+      right: 150px;
+      color: #3e709e;
+      z-index: 0; }
+      @media only screen and (min-width: 2560px) {
+        main #welcome #right .treeTwo {
+          font-size: 300px;
+          right: 200px; } }
+main #aboutConteiner {
+  background-color: #487eb0;
+  display: flex;
+  text-align: center;
+  height: 150vh; }
+  @media only screen and (min-width: 1024px) {
+    main #aboutConteiner {
+      width: 100vw;
+      height: 100vh;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 10px 100px 60px 100px; } }
+  @media only screen and (min-width: 1248px) {
+    main #aboutConteiner {
+      padding: 0px 100px 60px 100px; } }
+  main #aboutConteiner h1 {
+    font-family: 'Kalam', cursive;
+    margin: 20px 0px 30px 10px;
+    color: #80afdb;
+    cursor: default; }
+    @media only screen and (min-width: 1024px) {
+      main #aboutConteiner h1 {
+        margin: 20px; } }
+    @media only screen and (min-width: 2560px) {
+      main #aboutConteiner h1 {
+        font-size: 60px;
+        margin: 60px; } }
+  main #aboutConteiner #square-conteiner {
+    height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-bottom: 100px; }
+    @media only screen and (min-width: 1024px) {
+      main #aboutConteiner #square-conteiner {
+        flex-wrap: nowrap;
+        margin-bottom: 0px; } }
+    @media only screen and (min-width: 2560px) {
+      main #aboutConteiner #square-conteiner {
+        height: 300px; } }
+  main #aboutConteiner .square {
+    width: 100%;
+    margin: 0px 0px;
+    font-size: 25px;
+    padding: 5px;
+    color: #80afdb;
+    border: #80afdb solid 0px;
+    font-family: 'Neucha', cursive;
+    transition: 0.3s; }
+    main #aboutConteiner .square:hover {
+      border: #80afdb solid 5px;
+      color: #adceeb; }
+    @media only screen and (min-width: 1024px) {
+      main #aboutConteiner .square {
+        width: 50%;
+        margin: 10px 10px;
+        font-size: 35px;
+        padding: 20px; } }
+    @media only screen and (min-width: 2560px) {
+      main #aboutConteiner .square {
+        font-size: 55px;
+        padding: 10px; } }
+main #login-signUp {
+  height: 600px;
+  width: 100%;
+  padding: 0px 10px;
+  transition: transform 0.5s, opacity 1s; }
+  @media only screen and (min-width: 1024px) {
+    main #login-signUp {
+      display: flex;
+      padding: 0px 100px; } }
+main #login-box {
+  width: 300px;
+  height: 500px;
+  margin: 90px auto;
+  padding: 10px;
+  position: relative;
+  border-radius: 3px;
+  color: black;
+  background-color: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    main #login-box {
+      width: 400px;
+      height: 500px; } }
+  @media only screen and (min-width: 2560px) {
+    main #login-box {
+      width: 600px;
+      height: 800px;
+      padding: 20px; } }
+main .login {
+  width: 100%;
+  height: 430px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+main #signUp-box {
+  width: 300px;
+  height: 500px;
+  margin: 90px auto;
+  padding: 10px;
+  position: relative;
+  border-radius: 3px;
+  color: black;
+  background-color: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    main #signUp-box {
+      width: 400px;
+      height: 500px; } }
+  @media only screen and (min-width: 2560px) {
+    main #signUp-box {
+      width: 600px;
+      height: 800px;
+      padding: 20px; } }
+main .signUp {
+  width: 100%;
+  height: 430px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+main input[type="text"],
+main input[type="password"] {
+  display: block;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease; }
+  @media only screen and (min-width: 2560px) {
+    main input[type="text"],
+    main input[type="password"] {
+      padding: 8px;
+      width: 320px;
+      height: 62px; } }
+main input[type="text"]:focus,
+main input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease; }
+  @media only screen and (min-width: 2560px) {
+    main input[type="text"]:focus,
+    main input[type="password"]:focus {
+      border-bottom: 6px solid #16a085; } }
+main input[type="submit"] {
+  margin-top: 20px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  box-shadow: 0px 0px 0px black;
+  cursor: pointer; }
+  @media only screen and (min-width: 2560px) {
+    main input[type="submit"] {
+      width: 160px;
+      height: 62px; } }
+main input[type="submit"]:hover,
+main input[type="submit"]:focus {
+  box-shadow: 0px 1px 4px black;
+  transition: 0.2s; }
+main input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease-in-out; }
+main button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer; }
+main button.social-signin:hover,
+main button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+  width: 140px;
+  font-weight: 700; }
+main button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease; }
+main button.social-signin.facebook {
+  background: #32508E; }
+main button.social-signin.google {
+  background: #DD4B39; }
+main .or {
+  margin-top: 280px;
+  width: 150px;
+  height: 60px;
+  padding: 20px 0px;
+  font-size: 40px;
+  color: #adadad;
+  background: #f7fdf7;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  white-space: nowrap;
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    main .or {
+      display: block; } }
+  @media only screen and (min-width: 2560px) {
+    main .or {
+      margin-top: 320px;
+      width: 170px;
+      height: 80px;
+      padding: 30px 0px;
+      font-size: 50px; } }
+main .loginwith {
+  white-space: nowrap;
+  font-family: 'Concert One', cursive; }
+main .social-box {
+  margin-top: auto; }
+
+#west-list {
+  width: 100vw;
+  padding: 80px 0px;
+  border-top: solid 1vh black;
+  border-bottom: solid 1vh black;
+  background: #19d6e4;
+  background: linear-gradient(306deg, #19d6e4 0%, #17d2e6 35%, #00a8ff 100%);
+  text-align: center;
+  font-size: 30px;
+  color: white; }
+
+#search-bar-box {
+  width: 50vw;
+  height: 100px;
+  margin-top: 20px;
+  padding: 20px;
+  margin: auto;
+  display: flex; }
+  #search-bar-box input[type="text"] {
+    display: block;
+    padding: 4px 4px 4px 12px;
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.2s ease; }
+  #search-bar-box input[type="submit"] {
+    width: 20%;
+    height: 50px;
+    margin-top: 0px;
+    background: #44bd32;
+    border: none;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+    box-shadow: 0px 0px 0px black;
+    cursor: pointer; }
+    #search-bar-box input[type="submit"]:hover {
+      background: #3ea82e; }
+  #search-bar-box input[type="text"]:focus {
+    border-bottom: 5px solid #29ff7b;
+    color: #16a084;
+    transition: 0.2s ease; }
+
+#helloSecond {
+  margin: 40px 0px 0px 0px;
+  width: 280px;
+  height: 300px;
+  font-size: 13px;
+  background-color: #fff;
+  font-family: 'Kalam', cursive;
+  position: static;
+  z-index: 100;
+  float: left; }
+  @media only screen and (min-width: 400px) {
+    #helloSecond {
+      font-size: 16px;
+      width: 350px;
+      margin: 40px 0px 0px 0px; } }
+  @media only screen and (min-width: 768px) {
+    #helloSecond {
+      font-size: 28px;
+      width: 600px;
+      margin: 100px 0px 0px 0px; } }
+  @media only screen and (min-width: 1024px) {
+    #helloSecond {
+      margin: 40px 0px;
+      font-size: 35px;
+      width: 800px; } }
+  @media only screen and (min-width: 2560px) {
+    #helloSecond {
+      margin: 140px 0px;
+      font-size: 60px;
+      width: 1200px; } }
+
+#user {
+  color: #4cd137; }
+
+#userPanel {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  margin: auto 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); }
+  @media only screen and (min-width: 2560px) {
+    #userPanel {
+      margin: 100px 0px; } }
+
+#avatar {
+  float: left; }
+
+.user-name {
+  float: left;
+  margin-top: 40px;
+  padding: 5px 5px 5px 0px;
+  border: none;
+  border-bottom: 2px solid #AAA;
+  font-size: 30px;
+  font-family: 'Squada One', cursive;
+  white-space: nowrap; }
+  .user-name p {
+    float: left; }
+
+#rank {
+  float: right;
+  transform: translate(-10px, -80px); }
+
+.score {
+  margin: 85px -100px 0px 0px;
+  font-family: 'Kalam', cursive; }
+
+#section1 {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: -1; }
+  @media only screen and (min-width: 1024px) {
+    #section1 {
+      height: 700px;
+      padding: 10px 10px 60px 10px; } }
+
+.stat {
+  height: 50%;
+  padding: 10px;
+  font-family: 'Patrick Hand', cursive; }
+
+.places-place {
+  height: 80px;
+  width: 290px;
+  margin: 20px 20px 0px 0px;
+  border: #80afdb solid 2px;
+  float: left;
+  background-color: #fff;
+  border-radius: 180px; }
+  @media only screen and (min-width: 1440px) {
+    .places-place {
+      width: 250px; } }
+
+.question-place {
+  height: 80px;
+  width: 290px;
+  margin: 20px 20px 0px 0px;
+  border: #80afdb solid 2px;
+  float: left;
+  background-color: #fff;
+  border-radius: 180px; }
+  @media only screen and (min-width: 1440px) {
+    .question-place {
+      width: 250px; } }
+
+#boxformapbox {
+  width: 100wh;
+  position: relative;
+  left: 0; }
+
+#map-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /*"1fr" is one fraction*/
+  grid-template-rows: 50px 500px 50px;
+  /*height and amount of rows*/
+  background-color: white;
+  color: #232383;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Kalam', cursive; }
+  #map-box h1 {
+    font-family: 'Carter One', cursive;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4); }
+  #map-box #right {
+    width: 50%;
+    float: left; }
+    #map-box #right p {
+      font-size: 20px;
+      font-family: 'Carter One', cursive; }
+  #map-box .left {
+    padding: 25%; }
+  #map-box .right-right {
+    overflow: scroll;
+    width: 380px;
+    height: 600px;
+    margin: 0px 10px 0px 50px; }
+    @media only screen and (min-width: 2560px) {
+      #map-box .right-right {
+        width: 600px; } }
+    #map-box .right-right .comment {
+      width: 350px;
+      height: 150px;
+      padding: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      display: flex; }
+      @media only screen and (min-width: 2560px) {
+        #map-box .right-right .comment {
+          width: 590px; } }
+      #map-box .right-right .comment p {
+        margin: 0px 0px 0px 10px; }
+
+#west-box {
+  width: 100vw;
+  height: 200vh;
+  padding: 40px; }
+  #west-box h1 {
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive; }
+  #west-box img {
+    transform: translateY(-100px); }
+  #west-box .trashesOpacity {
+    transition: 0.4s ease; }
+
+.dropdown-trash {
+  width: 10%;
+  height: 50px;
+  margin-top: 0px;
+  background: #3ea82e;
+  border: none;
+  color: #FFF;
+  font-size: 40px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 0px black;
+  cursor: pointer; }
+  .dropdown-trash:hover {
+    background: #44bd32; }
+
+#panels {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #panels .rectangle {
+    width: 50%;
+    height: 250px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px black;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
+    #panels .rectangle .photo {
+      height: 100%;
+      width: 25%;
+      padding: 5px;
+      overflow: hidden;
+      background-image: url(../img/1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-right: white dashed 4px; }
+      #panels .rectangle .photo img {
+        height: 100%;
+        width: 100%; }
+    #panels .rectangle .description {
+      padding: 0px 0px 0px 26%;
+      transform: translateY(-240px);
+      display: block;
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      text-shadow: black 0px 0px 2px; }
+
+@keyframes logomove {
+  from {
+    scale: 0;
+    transform: translate(0px, -160px); }
+  25% {
+    scale: 1;
+    transform: translate(-5px, 0px); }
+  50% {
+    scale: 0;
+    transform: translate(0px, -90px); }
+  75% {
+    scale: 1;
+    transform: translate(-5px, 0px); }
+  to {
+    scale: 0;
+    transform: translate(0px, 140px); } }
+@keyframes logomove-tablet-wide {
+  from {
+    scale: 0;
+    transform: translate(0px, -160px); }
+  25% {
+    scale: 1;
+    transform: translate(-2px, 50px); }
+  50% {
+    scale: 0;
+    transform: translate(0px, 10px); }
+  75% {
+    scale: 1;
+    transform: translate(-2px, -50px); }
+  to {
+    scale: 0;
+    transform: translate(0px, 140px); } }
+@keyframes logomove-4K {
+  from {
+    scale: 0;
+    transform: translate(0px, -400px); }
+  25% {
+    scale: 1;
+    transform: translate(-2px, -10px); }
+  50% {
+    scale: 0;
+    transform: translate(0px, -170px); }
+  75% {
+    scale: 1;
+    transform: translate(-2px, -10px); }
+  to {
+    scale: 0;
+    transform: translate(0px, 180px); } }
+@keyframes greenglow {
+  from {
+    color: #487eb0; }
+  50% {
+    color: yellowgreen; }
+  to {
+    color: #487eb0; } }
+@keyframes text-puls {
+  from {
+    font-size: 40px; }
+  50% {
+    font-size: 41px; }
+  to {
+    font-size: 40px; } }
+@keyframes text-puls-tablet-wide {
+  from {
+    font-size: 20px; }
+  50% {
+    font-size: 21px; }
+  to {
+    font-size: 20px; } }
+@keyframes text-puls-4K {
+  from {
+    font-size: 60px; }
+  50% {
+    font-size: 61px; }
+  to {
+    font-size: 60px; } }
+
+/*# sourceMappingURL=style.css.map */

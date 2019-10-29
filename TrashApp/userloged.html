@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>TrashApp</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jakub Cywiński">
+    <meta name="description" content="Projekt stworzony prze Jakuba Cywińskiego (LO16 Szczecin) na konkurs programistyczny #HackHeroes2019">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="shortcut icon" href="img/shortcutIcon.png">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Carter+One|Concert+One|Indie+Flower|Kalam|Neucha|Patrick+Hand|Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <a href="#welcome" class="link">
+            <div id="logo">
+                <h1 class="move">Trash</h1>
+                <h1 class="move floatlogo">Fresh</h1>
+                <h1 class="floatlogo">App</h1>
+            </div>
+        </a>
+
+        <div id="nav">
+            <a href="#west-list" class="link">
+                <div id="about" class="navbutton"><i class="icon-leaf"></i></div>
+                <div class="nameBarAbout nameBar">List</div>
+            </a>
+            <a href="#map-box" class="link">
+                <div id="nav-map" class="navbutton"><i class="icon-globe"></i></div>
+                <div class="nameBarLogin nameBar">Map</div>
+            </a>
+            <a href="#welcome" class="link">
+                <div id="user" class="navbutton"><i class="icon-user-o"></i></div>
+                <div class="nameBarLogin nameBar">User</div>
+            </a>
+            <a href="index.html" class="link">
+                <div id="logout" class="navbutton"><i class="icon-off"></i></div>
+                <div class="nameBarLogin nameBar">Logout</div>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="welcome">
+            <div id="userPanel">
+                <div id="avatar">
+                    <svg height="120" width="140">
+
+                        <defs>
+                            <pattern id="img1" patternUnits="userSpaceOnUse" width="100%" height="650">
+                                <image class='twombly' xlink:href="avatar1.jpg" x="0" y="0" width="120" height="120" />
+                            </pattern> 
+                        </defs>
+
+                        <polygon points="50,10 90,10 120,40 120,80 90,110 50,110 20,80 20,40" fill="url(#img1)" filter="url(#sparklin)" style="stroke:#2f3740; stroke-width:6;" />
+                    </svg>
+                </div>
+                <div class="user-name"><p>Mr.Ecophantom</p><p>&nbsp;lv.1</p></div>
+                <div class="score">Score:<span class="points">&nbsp;167</span></div>
+                <div id="rank">
+                    <svg height="120" width="140">
+                        <polyline points="0,20 70,50 70,50 140,20" style="fill:none;stroke:gold;stroke-width:13" />
+                        <polyline points="5,40 70,70 70,70 135,40" style="fill:none;stroke:gold;stroke-width:10" />
+                        <!-- <polyline points="70,40 70,120" style="fill:none;stroke:gold;stroke-width:10" /> -->
+                        <!-- <polyline points="40,120 70,115 100,120" style="fill:none;stroke:gold;stroke-width:10" /> -->
+                        <polygon points="60,10 80,10 110,20 110,60 80,90 60,90 30,60 30,20" style="fill:#1f3b5a; stroke: gold; stroke-width:6;" />
+                        <polyline points="56,40 71,30 71,70" style="fill:none;stroke:gold;stroke-width:4" />
+                    </svg>
+                </div>
+
+            </div>
+            <div id="section1">
+                <div class="places-stat stat">
+                    <h1 data-aos="fade-left" data-aos-duration="1500">Places added:</h1>
+                    <div class="places-place" data-aos="fade-left" data-aos-duration="1500"></div>
+                    <div class="places-place" data-aos="fade-left" data-aos-duration="1500"></div>
+                    <div class="places-place" data-aos="fade-left" data-aos-duration="1500"></div>
+                    <div class="places-place" data-aos="fade-left" data-aos-duration="1500"></div>
+                </div>
+                <div class="question-stat stat">
+                    <h1 data-aos="fade-left" data-aos-duration="1500">Asked questions:</h1>
+                    <div class="question-place" data-aos="fade-left" data-aos-duration="1500"></div>
+                    <div class="question-place" data-aos="fade-left" data-aos-duration="1500"></div>
+                    <div class="question-place" data-aos="fade-left" data-aos-duration="1500"></div>
+                    <div class="question-place" data-aos="fade-left" data-aos-duration="1500"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="boxformapbox">
+            <div id="map-box">
+                <div class="left">
+                    <p>Add recycling point:</p>
+                    <form>
+                        <input type="text" name="username" placeholder="*Username" required />
+                        <input type="text" name="email" placeholder="*E-mail" required />
+                        <input type="password" name="password" placeholder="*Password"  required/>
+                                        
+                        <input type="submit" name="signup_submit" value="Send" />
+                    </form>
+                </div>
+                <div id="left" data-aos="flip-down" data-aos-duration="2000">
+                    <h1>Recycling points</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d101312.4593698663!2d14.542055264146446!3d53.39658554363065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571862566430!5m2!1spl!2spl" height="400px"  width="600px" frameborder="0" style="border:0;border-radius: 20px; border: midnightblue solid 5px; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);" allowfullscreen=""></iframe>
+                </div>
+                <div class="right-right">
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="west-list">
+            <div id="search-bar-box">
+                <input type="text" name="west-name" placeholder="Find trash..." class="float"/>
+                <input type="submit" name="westSearch" value="Search" class="float"/>
+                <a href="#panels" class="dropdown-trash link"><i class="icon-angle-double-down"></i></a>
+            </div>
+            <div id="west-box">
+                <h1>
+                    <span style="color: blue;">Blue?</span> <span style="color: green;">Green?</span> <span style="color: yellow;">Yellow?</span> <span style="color: red;">Or maybe red?</span><br>
+                    Use the application and find out where to throw waste.<br>
+                    Find out interesting things about trash!
+                </h1>
+                <img src="img/trashes.png" class="trashesOpacity">
+
+                <div id="panels">
+                    <div class="rectangle">
+                        <div class="photo float"></div>
+                        <div class="description float"> 
+                            <h1>Glass bottle -> <span class="green">Green container</span></h1>
+                            <p>The glass bottle decomposes 4000 years, the glass is very resistant to decay.</p>
+                        </div>
+                        <div class="code float"></div>
+                    </div>
+
+                    <div class="rectangle">
+                        <div class="photo float"></div>
+                        <div class="description float"> 
+                            <h1>Glass bottle -> <span class="green">Green container</span></h1>
+                            <p>The glass bottle decomposes 4000 years, the glass is very resistant to decay.</p>
+                        </div>
+                        <div class="code float"></div>
+                    </div>
+
+                    <div class="rectangle">
+                        <div class="photo float"></div>
+                        <div class="description float"> 
+                            <h1>Glass bottle -> <span class="green">Green container</span></h1>
+                            <p>The glass bottle decomposes 4000 years, the glass is very resistant to decay.</p>
+                        </div>
+                        <div class="code float"></div>
+                    </div>
+
+                    <div class="rectangle">
+                        <div class="photo float"></div>
+                        <div class="description float"> 
+                            <h1>Glass bottle -> <span class="green">Green container</span></h1>
+                            <p>The glass bottle decomposes 4000 years, the glass is very resistant to decay.</p>
+                        </div>
+                        <div class="code float"></div>
+                    </div>
+
+                    <div class="rectangle">
+                        <div class="photo float"></div>
+                        <div class="description float"> 
+                            <h1>Glass bottle -> <span class="green">Green container</span></h1>
+                            <p>The glass bottle decomposes 4000 years, the glass is very resistant to decay.</p>
+                        </div>
+                        <div class="code float"></div>
+                    </div>
+
+                    <div class="rectangle">
+                        <div class="photo float"></div>
+                        <div class="description float"> 
+                            <h1>Glass bottle -> <span class="green">Green container</span></h1>
+                            <p>The glass bottle decomposes 4000 years, the glass is very resistant to decay.</p>
+                        </div>
+                        <div class="code float"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+
+        AOS.init();
+
+        $(document).ready(function() {
+          $("html").on("submit","#contact_form",function(e){
+            e.preventDefault();
+            $("#send_form_status").html('').hide();
+            var data=$("#contact_form").serialize();
+            $.post("/send_form.php",data,function(res){
+              $("#send_form_status").html(res.msg).show();
+              if(res.status==1){ 
+                $("#contact_form")[0].reset();
+              } 
+            });
+          });
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>TrashApp</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jakub Cywiński">
+    <meta name="description" content="Projekt stworzony prze Jakuba Cywińskiego (LO16 Szczecin) na konkurs programistyczny #HackHeroes2019">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="shortcut icon" href="img/shortcutIcon.png">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Carter+One|Concert+One|Indie+Flower|Kalam|Neucha|Patrick+Hand|Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#welcome" class="link">
+            <div id="logo">
+                <h1 class="move">Trash</h1>
+                <h1 class="move floatlogo">Fresh</h1>
+                <h1 class="floatlogo">App</h1>
+            </div>
+        </a>
+
+        <div id="nav">
+            <a href="about.html" class="link">
+                <div id="about" class="navbutton"><i class="icon-file-code"></i></div>
+                <div class="nameBarAbout nameBar">About</div>
+            </a>
+            <a href="#login-signUp" class="link">
+                <div id="login" class="navbutton"><i class="icon-user-o"></i></div>
+                <div class="nameBarLogin nameBar">Login</div>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="welcome">
+            <div id="hello">
+                <h1>Hello!</h1>
+                <p>Are you <span class="green-text-shadow">eco</span>? This is a web application <span class="text-puls"><b>especially for you!</b></span> Efficient, fully intuitive and <b>FREE!</b></p>
+            </div>
+            <div id="right">
+                <div class="treeOne"><i class="icon-tree"></i></div>
+                <div class="treeTwo"><i class="icon-tree"></i></div>
+            </div>
+        </div>
+<!-- --------------------------------------------------------------------------- -->
+        <div id="aboutConteiner">
+            <a href="about.html" class="link">
+                <h1 data-aos="zoom-in-up" data-aos-duration="3000">#About TrashApp</h1>
+                <div id="square-conteiner">
+                    <div class="square" data-aos="flip-right" data-aos-duration="10000">
+                        <i class="icon-map"></i>
+                        <p>With the application you can see the recycling points in Poland and add them yourself!</p>
+                    </div>
+                    <div class="square" data-aos="flip-left" data-aos-duration="10000">
+                        <i class="icon-ok"></i>
+                        <p>Verification by taking a picture of the product and container!</p>
+                    </div>
+                </div>
+                <div id="square-conteiner">
+                    <div class="square" data-aos="flip-right" data-aos-duration="10000">
+                        <i class="icon-help"></i>
+                        <p>Information and interesting facts about waste.</p>
+                    </div>
+                    <div class="square" data-aos="flip-left" data-aos-duration="10000">
+                        <i class="icon-book"></i>
+                        <p>Rank system, leveling and badges.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- <div id="map-box">
+            <div id="left" data-aos="flip-down" data-aos-duration="2000">
+                <h1>Recycling points</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d101312.4593698663!2d14.542055264146446!3d53.39658554363065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571862566430!5m2!1spl!2spl" width="600" height="600" frameborder="0" style="border:0;border-radius: 20px; border: midnightblue solid 5px; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);" allowfullscreen=""></iframe>
+            </div>
+            <div id="right">
+                <div class="right-left">
+                    <p>When you are logged in <br>you can add places!</p>
+                    <p>You can also earn <br>points and rankings!</p>
+                </div>
+                <div class="right-right">
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                    <div class="comment">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d80619.56067738723!2d14.524678156730367!3d53.415532228979046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srecycling!5e0!3m2!1spl!2spl!4v1571877449838!5m2!1spl!2spl" width="200" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <p>Hi! Today I was passing this place and it wasn't on the map.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div> -->
+
+<!-- ---------------------------------------------------------------------------- -->
+        <a href="userloged.html" class="link"> 
+            <div id="login-signUp">
+                <div id="login-box" data-aos="zoom-in" data-aos-duration="3000">
+                    <h1>Login</h1>
+                    <div class="login">
+                        <form>
+                            <input type="text" name="email" placeholder="*E-mail" required />
+                            <input type="password" name="password" placeholder="*Password"  required/>
+                                    
+                            <input type="submit" name="signup_submit" value="Login" />
+                        </form>
+
+                        <div class="social-box">
+                            <form>
+                                <span class="loginwith">Login with<br/></span>
+                                
+                                <button class="social-signin facebook">Facebook</button>
+                                <button class="social-signin google">Google</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="or" data-aos="zoom-in" data-aos-duration="2000"><- OR -></div>
+
+                <div id="signUp-box" data-aos="zoom-in" data-aos-duration="3000">
+                    <h1>Sign Up</h1>
+                    <div class="signUp">
+                        <form>
+                            <input type="text" name="username" placeholder="*Username" required />
+                            <input type="text" name="email" placeholder="*E-mail" required />
+                            <input type="password" name="password" placeholder="*Password"  required/>
+                            <input type="password" name="password2" placeholder="*Retype password" required/>
+                                        
+                            <input type="submit" name="signup_submit" value="Sign me up" />
+                        </form>
+                        <div class="social-box">
+                                <form>
+                                    <span class="loginwith">Login with<br/></span>
+                                    
+                                    <button class="social-signin facebook">Facebook</button>
+                                    <button class="social-signin google">Google</button>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+<!-- ------------------------------------------------------------------------------- -->
+    </main>
+
+    <script>
+
+        AOS.init();
+
+        $(document).ready(function() {
+          $("html").on("submit","#contact_form",function(e){
+            e.preventDefault();
+            $("#send_form_status").html('').hide();
+            var data=$("#contact_form").serialize();
+            $.post("/send_form.php",data,function(res){
+              $("#send_form_status").html(res.msg).show();
+              if(res.status==1){ 
+                $("#contact_form")[0].reset();
+              } 
+            });
+          });
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
